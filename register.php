@@ -140,7 +140,7 @@
 
 
 					echo 'Registration Successful!';             //- CONFIRM REG
-          header("Refresh: 5");   //- REFRESH PAGE IN 5 SECONDS
+          header("Refresh:3; url=register.php");   //- REFRESH PAGE IN 3 SECONDS
 				
         // ?SUBMIT == FALSE
 				} else{
