@@ -80,10 +80,19 @@ header( "refresh:3; url=memberlist.php" );
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                   <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                      <a class="nav-link" href="events.php">Events</a>
+                    <a class="nav-link" href="aboutus.php">About</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="register.php">Register</a>
+                    <a class="nav-link" href="gallery.php">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="events.php">Events</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="testimonials.php">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="register.php">Register</a>
                     </li>
                     <!-- <li class="nav-item">
                       <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
