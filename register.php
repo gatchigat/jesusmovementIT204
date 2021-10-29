@@ -140,7 +140,7 @@
 
 
 					echo 'Registration Successful!';             //- CONFIRM REG
-          header("Refresh:5");   //- REFRESH PAGE EVERY 3 SECONDS
+          header("Refresh: 5");   //- REFRESH PAGE IN 5 SECONDS
 				
         // ?SUBMIT == FALSE
 				} else{
