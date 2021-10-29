@@ -93,12 +93,6 @@
   				$contactNo = $_POST['contactNo'];
   				$addressReg = $_POST['addressReg'];
 
-          // ?APPEND TXT FILE AND SAVE (LOCALHOST APPLICABLE ONLY)
-          $toSave = fopen("JesusMovementMembReg.txt", "a") or die("Unable to open file!");
-          $regCon = 'First Name: '.$fName."\n".'Last Name: '.$lName."\n".'Email Address: '.$emailAdd."\n".'Contact No: '.$contactNo."\n".'Address:  '.$addressReg."\n\n";
-          fwrite($toSave, $regCon);
-          fclose($toSave);
-
 
           //!DB Connect 
 
@@ -137,16 +131,14 @@
           if (!$result){
             die('Error'.mysqli_error());
           }
-
-
-					echo 'Registration Successful!';             //- CONFIRM REG
-          header("Refresh:3; url=register.php");   //- REFRESH PAGE IN 3 SECONDS
+          echo 'Registration Successful!';             //- CONFIRM REG
+          header( "refresh:3; url=register.php" );    //- REFRESH PAGE EVERY 3 SECONDS
 				
-        // ?SUBMIT == FALSE
-				} else{
+         // ?SUBMIT == FALSE
+          } else{
 					#pass
-				}
-				 ?>
+          }
+        ?>
 				 </div>
 
          <!-- INPUT CONTAINER-->
