@@ -1,0 +1,46 @@
+// // var awit = prompt('Enter message: ');
+// // var awitCount = awit.length
+// // // alert('You have entered ' + awitCount + ' characters.' + ' You have ' + (140-awitCount) + ' characters remaining.')
+// // var result = awit.slice(0,140);
+// // alert(result.toUpperCase());
+
+// var yourName = prompt('What is your name? ');
+// var nameCap = yourName.slice(0,1);
+// var nameCap = nameCap.toUpperCase();
+// var nameSma = yourName.slice(1,);
+// // var nameSma = nameSma.
+// alert('Hello ' + nameCap + nameSma + ' !!!');
+
+function getMilk(money, priceBottle){
+    
+    console.log('Buy ' + calcBottles(money, priceBottle) + ' bottles of milk.');
+//     var change = money % 1.5;
+    
+
+    return calcChange(money, priceBottle)
+}
+
+
+
+function calcBottles(startMoney, priceBottle){
+    var noBottles = Math.floor(startMoney / priceBottle);
+    return noBottles;
+}
+
+function calcChange(startMoney, priceBottle){
+    var change = startMoney % priceBottle;
+    return change;
+}
+
+// var change = getMilk(20);
+console.log('Your change is $' + getMilk(20, 1.5) + '.');
+
+
+function getBMI(weight, height){
+    var bmi = weight / (height ** 2);
+    return bmi;
+
+}
+
+var BMI = getBMI(150,1.778);
+console.log(Math.round(BMI));
