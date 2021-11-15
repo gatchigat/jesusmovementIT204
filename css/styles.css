@@ -42,7 +42,7 @@ p {
 
 .nav-link {
   font-family: "Montserrat-Light", serif;
-  font-size: 1.3rem;
+  font-size: 1.125rem;
 }
 .navbar-brand {
   font-family: "Open Sans", sans-serif;
@@ -52,11 +52,11 @@ p {
 }
 .navbar-dark .navbar-nav .nav-link {
   color: white;
-  transition: color 500ms, text-shadow 900ms;
+  transition: color 0.8s, text-shadow 1.2s;
 }
 .navbar-dark .navbar-nav .nav-link:hover {
-  color: #253e31;
-  text-shadow: #00ffc6 1px 0 10px;
+  color: #27253e;
+  text-shadow: #00c3ff 1px 0 10px;
 }
 .container-fluid {
   padding: 7% 15%;
@@ -70,7 +70,7 @@ p {
 
 /* SECTIONS */
 .colored-section {
-  background-color: #00c5a3;
+  background-color: #6e9fcc;
   color: #fff;
 }
 
@@ -81,7 +81,7 @@ p {
 /* TITLE SECTION */
 
 #title .container-fluid {
-  padding: 3% 15% 30%;
+  padding: 3% 15% 23%;
   text-align: left;
 }
 
@@ -106,12 +106,13 @@ p {
   padding: 5%;
 }
 .icon {
-  color: #18ac9f;
+  color: #6da0e4;
   margin-bottom: 1.5rem;
+  transition: color 1s;
 }
 
 .icon:hover {
-  color: #2adabc;
+  color: #a2d2ff;
 }
 
 /* .feature-box {
@@ -120,8 +121,7 @@ p {
 
 /* Testimonial Section */
 #testimonials {
-  /* background-color: #18ac9f; */
-  /*height: 800px;*/
+  padding: 0% 0 8%;
 }
 .testimonialHeading {
   padding-top: 3%;
@@ -199,7 +199,13 @@ p {
 .cta-heading {
   font-family: "Montserrat", serif;
   font-weight: 900;
-  font-size: 3rem;
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+.sml-heading {
+  font-family: "Montserrat", serif;
+  font-weight: 600;
+  font-size: 1.2rem;
   line-height: 1.5;
 }
 
@@ -217,7 +223,7 @@ p {
   color: black;
 }
 .social-icon:hover {
-  color: #5eaaa8;
+  color: #618ed3;
 }
 .copy-foot1 {
   /*color: #ffffff;*/
@@ -246,7 +252,7 @@ p {
   color: white;
 }
 .social-icon-others:hover {
-  color: #2adabc;
+  color: #618ed3;
 }
 
 #othersMain {
@@ -275,7 +281,7 @@ p {
   margin: 0;
   font-family: "Kalam", sans-serif;
   font-size: 3rem;
-  color: #00af91;
+  color: #618ed3;
   text-shadow: 2px 2px 2px #3d3d3d;
   font-weight: bolder;
 }
@@ -299,7 +305,7 @@ table td {
 }*/
 button {
   border-radius: 10px;
-  outline-color: #00af91;
+  outline-color: #618ed3;
 }
 .buttonDiv {
   text-align: center;
@@ -312,7 +318,7 @@ button {
 }
 
 .colorG {
-  color: #00af91;
+  color: #618ed3;
   text-shadow: 1px 1px 2px #3d3d3d;
 }
 
@@ -331,7 +337,7 @@ button {
 
 /*EVENTS*/
 #events {
-  /*background-color: #18ac9f;*/
+  /*background-color: #618ed3;*/
 }
 #events {
   width: 100%;
@@ -372,13 +378,13 @@ button {
 .carousel-control-next-icon1:after {
   content: ">";
   font-size: 55px;
-  color: #00af91;
+  color: #618ed3;
 }
 
 .carousel-control-prev-icon1:after {
   content: "<";
   font-size: 55px;
-  color: #00af91;
+  color: #618ed3;
 }
 
 /*BACK TO TOP BUTTON*/
@@ -390,7 +396,7 @@ button {
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
-  background-color: #00af91; /* Set a background color */
+  background-color: #618ed3; /* Set a background color */
   color: white; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 10px;
@@ -400,8 +406,8 @@ button {
 }
 
 #myBtn:hover {
-  background-color: #298e57;
-  color: #0fd98b;
+  background-color: #4669aa;
+  color: #09213b;
 }
 
 /* MEDIA QUERY */
@@ -423,6 +429,9 @@ button {
   }
   .press-logo {
     width: 15%;
+  }
+  #testimonials {
+    padding: 0 0 25%;
   }
   .testimonial-text,
   .cta-heading {
@@ -449,7 +458,7 @@ button {
 }
 
 .gallery {
-  padding: 3% 10% 10%;
+  padding: 3% 10% 2%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -463,6 +472,18 @@ button {
 .gallery img:hover {
   transform: scale(1.5);
   animation: ease-in;
+}
+#videos {
+  padding: 3% 5% 5%;
+}
+#videos h3 {
+  padding: 3% 0;
+}
+.videos {
+  padding: 3% 5% 5%;
+}
+.video {
+  padding: 3% 0 5%;
 }
 
 @media (max-width: 400px) {
