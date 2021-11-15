@@ -66,25 +66,27 @@ include "about.php"
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                   <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                    <a class="nav-link" href="aboutus.php">About</a>
+                        <a class="nav-link" href="aboutus.php">About</a>
                     </li>
                     <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">Media</a>
                       <div class="dropdown-menu">
-                        <a class="dropdown-item" href="gallery.php">Gallery</a>
-                        <a class="dropdown-item" href="videos.php">Video Library</a>
+                          <a class="dropdown-item" href="gallery.php">Gallery</a>
+                          <a class="dropdown-item" href="videos.php">Video Library</a>
                       </div>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="events.php">Events</a>
+                        <a class="nav-link" href="events.php">Events</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="register.php">Register</a>
+                        <a class="nav-link" href="testimonials.php">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="register.php">Register</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="contact.php">Contact</a>
                     </li>
-                    
                     <!-- <li class="nav-item">
                       <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
                     </li> -->
@@ -98,59 +100,54 @@ include "about.php"
           </div>
       </section>
        
-  <!-- !Testimonials -->
-  <!--*BOOTSTRAP Carousel testimonials x -->
-  <section class="white-section" id="testimonials">
-    <div class="testimonialHeadingDiv"><h2 class="bolder colorG">Testimonials</h2></div>
-    <div id="testimonial-carousel" class="carousel slide" data-ride="false">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="testi3 carousel-item active container-fluid">
-          <h2 class="testimonial-text">Nang emena gushung mahogany kemerloo matod katagalugan bigalou bonggakea shonget
-            bella na ng wasok shontis at nang kemerloo krang-krang ang bella shonget bigalou mashumers at nang shonget
-            quality control jubabels.</h2>
-          <img class="testimonial-img" src="images/kim5.png" alt="profile">
-          <em>Kim Ahrin</em>
+     <section class="white-section" id="videos">
+       <h3 class="bold">Video Libary</h3>
+       <div class="videos">
+       
+         <div class="container">
+
+          <div class="row">
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img src="images/videos/videos1.jpg" class="card-img-top" alt="thumbnail two people">
+                <div class="card-body">
+                  <h5 class="card-title">Welcome to JM Ministries!</h5>
+                  
+                  <a href="video1.php" class="btn btn-primary">Watch</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img src="images/videos/videos2.jpg" class="card-img-top" alt="thumbnail Agnus Dei Text with woman singing">
+                <div class="card-body">
+                  <h5 class="card-title">Jesus Movement - Agnus Dei</h5>
+                  
+                  <a href="video2.php" class="btn btn-primary">Watch</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img src="images/videos/videos3.jpg" class="card-img-top" alt="thumbnail Woman singing">
+                <div class="card-body">
+                  <h5 class="card-title">Fill me up - Jesus Movement</h5>
+                  
+                  <a href="video3.php" class="btn btn-primary">Watch</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="testi1 carousel-item container-fluid">
-          <h2 class="testimonial-text">Lorem ipsum keme keme keme 48 years otoko shonga na bigalou at ang shonget ano
-            matod daki lorem ipsum keme keme at bonggakea bakit at nang na ang antibiotic kabog chapter na ang katol
-            otoko lulu na pamentos wasok na ang Gino guash pranella.</h2>
-
-          <img class="testimonial-img" src="images/kevin2.png" alt="profile">
-          <em>Kevin Ansay</em>
-
         </div>
-        <div class="testi1 carousel-item container-fluid">
-          <h2 class="testimonial-text">Nang emena gushung chipipay at bakit at bakit na ang effem at bakit ano kemerloo
-            waz at bakit lorem ipsum keme keme balaj kemerloo at nang bakit ma-kyonget jowa pranella kasi buya at bakit
-            intonses bakit na ganda lang thunder na valaj urky.</h2>
-          <img class="testimonial-img" src="images/kent3.jpg" alt="profile">
-          <em>Kent Harvey Paez</em>
+  
+       
+    </section>
+   
 
-        </div>
-      </div>
-      <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon1" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
-        <span class="carousel-control-next-icon1" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
-    </div>
-
-  </section>
-
-	
 	<!-- !Footer -->
         <section>
-          <footer class="colored-section footer-others fixed-bottom" id="footer">
+          <footer class="colored-section footer-others" id="footer">
             <a href="https://www.facebook.com/JMMinistriesOfficial" target="blank"> <i
             class=" social-icon-others fab fa-facebook-f "></i></a>
             <a href="https://twitter.com/tjesusmovement?lang=en" target="blank"> <i
@@ -177,5 +174,3 @@ include "about.php"
 		</script>
 </body>
 </html>
-
-

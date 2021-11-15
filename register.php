@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Jesus Movement | Registration</title>
-	    <!-- *Bootstrap -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jesus Movement | Registration</title>
+      <!-- *Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
       integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
       <!-- *CSS-->
@@ -30,27 +30,27 @@
           <!-- *Favicon -->
           <link rel="icon" href="favicon.ico" />
           <style>
-    			.navbar{
-    				padding-bottom: 0;
-    			}
-    			h3{
-    				text-align: center;
-    				font-weight: bold;
-    				padding-bottom: 20px;
-    			}
-    	/*	main{
-    				height: 85vh;
-    				font-size: 20px;
-    				font-weight: bold;
-    				display: flex;
-    				justify-content: center;
-    				align-items: center;
-    			}*/
-    		
+          .navbar{
+            padding-bottom: 0;
+          }
+          h3{
+            text-align: center;
+            font-weight: bold;
+            padding-bottom: 20px;
+          }
+      /*  main{
+            height: 85vh;
+            font-size: 20px;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }*/
+        
       </style>
 </head>
 <body>
-	<!-- !Title -->
+  <!-- !Title -->
           <section class="colored-section others">
             <div class="">
               <!-- *Nav Bar -->
@@ -65,14 +65,21 @@
                     <li class="nav-item">
                     <a class="nav-link" href="aboutus.php">About</a>
                     </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="gallery.php">Gallery</a>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">Media</a>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="gallery.php">Gallery</a>
+                        <a class="dropdown-item" href="videos.php">Video Library</a>
+                      </div>
                     </li>
                     <li class="nav-item">
                     <a class="nav-link" href="events.php">Events</a>
                     </li>
                     <li class="nav-item">
                     <a class="nav-link" href="testimonials.php">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="contact.php">Contact</a>
                     </li>
                   </ul>
                 </div>
@@ -82,16 +89,23 @@
       <main id="">
           <!-- !PHP  -->
       <div class='phpDiv'>
-        <?php
+        <?php 
+      
         // ?SUBMIT == TRUE
         // ?PULLED VALUES TO VAR
-				if(isset($_POST['submit'])){
+        if(isset($_POST['submit'])){
 
-  				$fName = $_POST['fName'];
-  				$lName = $_POST['lName'];
-  				$emailAdd = $_POST['email'];
-  				$contactNo = $_POST['contactNo'];
-  				$addressReg = $_POST['addressReg'];
+          $fName = $_POST['fName'];
+          $lName = $_POST['lName'];
+          $emailAdd = $_POST['email'];
+          $contactNo = $_POST['contactNo'];
+          $addressReg = $_POST['addressReg'];
+
+          // ?APPEND TXT FILE AND SAVE (LOCALHOST APPLICABLE ONLY)
+          $toSave = fopen("JesusMovementMembReg.txt", "a") or die("Unable to open file!");
+          $regCon = 'First Name: '.$fName."\n".'Last Name: '.$lName."\n".'Email Address: '.$emailAdd."\n".'Contact No: '.$contactNo."\n".'Address:  '.$addressReg."\n\n";
+          fwrite($toSave, $regCon);
+          fclose($toSave);
 
 
           //!DB Connect 
@@ -122,7 +136,7 @@
 
 
           // ?INSERT VALUES
-          $query = "INSERT INTO register(FirstName, LastName, email, contactNo, address)";
+          $query = "INSERT INTO register(FirstName, LastName, email, ContactNo, address)";
           $query .=  "VALUES ('$fName', '$lName', '$emailAdd', '$contactNo', '$addressReg')";
 
           $result = mysqli_query($connection, $query);
@@ -131,24 +145,23 @@
           if (!$result){
             die('Error'.mysqli_error());
           }
-          echo 'Registration Successful!';             //- CONFIRM REG
-          header( "refresh:3; url=register.php" );    //- REFRESH PAGE EVERY 3 SECONDS
-				
-         // ?SUBMIT == FALSE
-          } else{
-					#pass
-          }
-        ?>
-				 </div>
+          echo "<meta http-equiv='refresh' content='0'>";
+        
+        // ?SUBMIT == FALSE
+        } else{
+          #pass
+        }
+         ?>
+         </div>
 
          <!-- INPUT CONTAINER-->
           <section class="white-section" id="register">
             <div class="container-fluid">
 
-            	<!-- Registration Form Using Bootsrap Forms -->
-            	<h3 class="bold">Registration</h3>
-               <form action="" method="POST" >
-            	   <div class="form-group row">
+              <!-- Registration Form Using Bootsrap Forms -->
+              <h3 class="bold">Registration</h3>
+               <form action="" method="POST" onsubmit="alert('Registration Successful!');">
+                 <div class="form-group row">
                   <label for="fName" class='input-label col-sm-4 col-form-label text-left'>First Name</label>
                   <div class="col-sm-8">
                     <input type="text" class="form-control form-control-lg"name="fName" id="fName" size="" required="">
@@ -181,15 +194,15 @@
                   </div>
                 </div>
 
-            	<!-- BUTTON BOOTSTRAP -->
-            	<div class="buttonDiv"><button type="submit" name='submit' class="btn btn-outline-dark btn-lg">Submit</button></div>
-				      </form>
+              <!-- BUTTON BOOTSTRAP -->
+              <div class="buttonDiv"><button type="submit" name='submit' class="btn btn-outline-dark btn-lg">Submit</button></div>
+              </form>
           </div>
         </section>
 
-	</main>
-	<!-- !Footer -->
-        <footer class="colored-section footer-others fixed-bottom" id="footer">
+  </main>
+  <!-- !Footer -->
+        <footer class="colored-section footer-others" id="footer">
           <a href="https://www.facebook.com/JMMinistriesOfficial" target="blank"> <i
           class=" social-icon-others fab fa-facebook-f "></i></a>
           <a href="https://twitter.com/tjesusmovement?lang=en" target="blank"> <i
@@ -200,17 +213,17 @@
           <p class=" copy-foot1Others footer-others">©Copyright 2021 Jesus Movement</p>
           <p class="copy-foot2 footer-others2">Website by Gatchi @ College of the Immaculate Conception</p>
         </footer>
-		<script>
-			   function TestsFunction() {
-				    var T = document.getElementById("othersMain");
-					    if (T.style.display === "block"){
-					    	T.style.display = "none";  // <-- Set it to block
+    <script>
+         function TestsFunction() {
+            var T = document.getElementById("othersMain");
+              if (T.style.display === "block"){
+                T.style.display = "none";  // <-- Set it to block
 
-					  	}else {
-	    					T.style.display = "none";
-	  					}
-					}
+              }else {
+                T.style.display = "none";
+              }
+          }
 
-		</script>
+    </script>
 </body>
 </html>
