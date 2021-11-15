@@ -105,3 +105,33 @@ Email Address: tiago@hotmail.com
 Contact No: 9009124
 Address:  Kawit, Cavite
 
+First Name: Tiagong
+Last Name: Akyat
+Email Address: ttakyat@gg.com
+Contact No: 2390842093
+Address:  Bacoor, Cavite
+
+First Name: Curacha
+Last Name: Corazon
+Email Address: walangpahinga@gmail.com
+Contact No: 9028429014
+Address:  Tondo, Manila
+
+First Name: Leon
+Last Name: Guerrero
+Email Address: bangbang@gmail.com
+Contact No: 938902332
+Address:  Guagua, Pampanga
+
+First Name: Kumander
+Last Name: Melody
+Email Address: kmeds@gmail.com
+Contact No: 12904124
+Address:  Paticul, Sulu
+
+First Name: Cardo
+Last Name: Dalisay
+Email Address: immortality@gmail.com
+Contact No: 121241251
+Address:  Tondo, Manila
+

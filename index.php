@@ -54,9 +54,14 @@
             <li class="nav-item">
               <a class="nav-link" href="aboutus.php">About</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="gallery.php">Gallery</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">Media</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="gallery.php">Gallery</a>
+                <a class="dropdown-item" href="videos.php">Video Library</a>
+              </div>
             </li>
+
             <li class="nav-item">
               <a class="nav-link" href="events.php">Events</a>
             </li>
@@ -65,6 +70,9 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="register.php">Register</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.php">Contact</a>
             </li>
             <!-- <li class="nav-item">
                       <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
@@ -115,16 +123,11 @@
   <!--!Call to Action Quote -->
   <section class="colored-section container-fluid" id="cta">
     <h3 class="cta-heading">
+      "You are the light of the world. A city set on a hill cannot be hidden. Nor do people light a lamp and put it under a basket, but on a stand, and it gives light to all in the house. In the same way, let your light shine before others, so that they may see your good works and give glory to your Father who is in heaven.”
+              
+  </h3>
 
-
-      <?php
-              //+ ADDITIONAL TASK FILE MANIPULATION
-              $cta_txt = fopen('cta.txt', 'r'); //- OPEN CONN txt file read only mode main directory/cta.txt 
-              echo fread($cta_txt,3000);                   //- ECHO contents
-              fclose($cta_txt);                       //- CLOSE CONN
-              ?></h3>
-
-    <h2 class="sml-heading"> - Ego Intervenerit</h2>
+    <h2 class="sml-heading"> Matthew 5:14-16</h2>
   </section>
   <!-- !Footer -->
   <footer class="white-section" id="footer">
@@ -147,9 +150,9 @@
     window.onscroll = function () { scrollFunction() };
 
 
-    //PAGE HEIGHT WHEN THE BUTTON APPEARS IS SET AT 700px
+    //PAGE HEIGHT WHEN THE BUTTON APPEARS IS SET AT 500px
     function scrollFunction() {
-      if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
+      if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
         mybutton.style.display = "block";
       } else {
         mybutton.style.display = "none";
