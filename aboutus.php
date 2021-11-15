@@ -68,8 +68,12 @@ include "about.php"
                 </button>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                        <a class="nav-link" href="gallery.php">Gallery</a>
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">Media</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="gallery.php">Gallery</a>
+                            <a class="dropdown-item" href="videos.php">Video Library</a>
+                        </div>
                         </li>
                         <li class="nav-item">
                         <a class="nav-link" href="events.php">Events</a>
@@ -79,6 +83,9 @@ include "about.php"
                         </li>
                         <li class="nav-item">
                         <a class="nav-link" href="register.php">Register</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.php">Contact</a>
                         </li>
                         <!-- <li class="nav-item">
                       <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
@@ -99,7 +106,13 @@ include "about.php"
         <!-- * About paragraph -->
         <p class="about-p">
 
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa itaque, enim at eius earum facere et accusantium mollitia. Quia, alias nemo corporis nostrum quis aliquid consequatur rem quasi aspernatur nisi, provident repudiandae quisquam, recusandae asperiores quaerat? Consectetur tenetur deserunt maxime libero eius cupiditate, vel similique dicta ut error sit, cumque iste fugit quidem sint commodi cum voluptatibus odit? Iure amet, pariatur minima inventore blanditiis qui quam id deserunt aperiam iusto, cupiditate sed modi voluptas possimus laboriosam saepe! Aliquid enim ut, quisquam culpa totam eveniet quasi velit, amet consectetur, consequatur adipisci perferendis sapiente asperiores. Error nulla minus quam non veritatis eos?</p>
+            The Jesus Movement is the ongoing community of people who center their lives on Jesus and following him into loving, liberating and life-giving relationship with God, each other and creation.
+
+Together, we follow Jesus as we love God with our whole heart, soul and mind and love our neighbors as ourselves (Matthew 22:36-40), and restore each other and all of creation to unity with God in Christ (BCP, p. 855).
+
+Jesus launched this movement when he welcomed the first disciples to follow his loving, liberating, life-giving Way. Today, we participate in his movement with our whole lives: our prayer, worship, teaching, preaching, gathering, healing, action, family, work, play and rest.
+
+In all things, we seek to be loving, liberating and life-giving—just like the God who formed all things in love; liberates us all from prisons of mind, body and spirit; and gives life so we can participate in the resurrection and healing of God’s world.</p>
 
 
 

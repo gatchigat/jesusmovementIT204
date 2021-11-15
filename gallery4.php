@@ -68,7 +68,7 @@ include "about.php"
                     <li class="nav-item">
                         <a class="nav-link" href="aboutus.php">About</a>
                     </li>
-                    <li class="nav-item dropdown">
+                     <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">Media</a>
                       <div class="dropdown-menu">
                           <a class="dropdown-item" href="gallery.php">Gallery</a>
@@ -86,7 +86,7 @@ include "about.php"
                     </li>
                    <li class="nav-item">
                       <a class="nav-link" href="contact.php">Contact</a>
-                  </li>
+                    </li>
                     <!-- <li class="nav-item">
                       <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
                     </li> -->
@@ -103,30 +103,30 @@ include "about.php"
      <section class="white-section" id="gallery">
          <div class="gallery">
             
-         <img src="images/gallery/1a.jpg" alt="">
-         <img src="images/gallery/1b.jpg" alt="">
-         <img src="images/gallery/2.jpeg" alt="">
-         <img src="images/gallery/3.jpeg" alt="">
-         <img src="images/gallery/4.jpeg" alt="">
-         <img src="images/gallery/5.jpeg" alt="">
+         <img src="images/gallery/19.jpg" alt="">
+         <img src="images/gallery/20.jpg" alt="">
+         <img src="images/gallery/21.jpg" alt="">
+         <img src="images/gallery/22.jpg" alt="">
+         <img src="images/gallery/23.jpg" alt="">
+         <img src="images/gallery/24.jpg" alt="">
         </div>
   
        
     </section>
     <div class="d-inline-flex p-2"> <nav aria-label="Page navigation example">
         <ul class="pagination">
-          <li class="page-item disabled">
-            <a class="page-link" href="#" aria-label="Previous">
+          <li class="page-item">
+            <a class="page-link" href="gallery3.php" aria-label="Previous">
               <span aria-hidden="true">&laquo;</span>
             </a>
           </li>
-          <li class="page-item disabled"><a class="page-link" href="gallery.php">1</a></li>
+          <li class="page-item"><a class="page-link" href="gallery.php">1</a></li>
           <li class="page-item"><a class="page-link" href="gallery2.php">2</a></li>
           <li class="page-item"><a class="page-link" href="gallery3.php">3</a></li>
-          <li class="page-item"><a class="page-link" href="gallery4.php">4</a></li>
-          <li class="page-item"><a class="page-link" href="gallery5.php">5</a></li>
+          <li class="page-item disabled"><a class="page-link" href="gallery4.php">4</a></li>
           <li class="page-item">
-            <a class="page-link" href="gallery2.php" aria-label="Next">
+            <li class="page-item"><a class="page-link" href="gallery5.php">5</a></li>
+            <a class="page-link" href="gallery5.php" aria-label="Next">
               <span aria-hidden="true">&raquo;</span>
             </a>
           </li>

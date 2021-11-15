@@ -68,14 +68,21 @@ include "about.php"
                     <li class="nav-item">
                       <a class="nav-link" href="aboutus.php">About</a>
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="gallery.php">Gallery</a>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">Media</a>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="gallery.php">Gallery</a>
+                        <a class="dropdown-item" href="videos.php">Video Library</a>
+                      </div>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="testimonials.php">Testimonials</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="register.php">Register</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="contact.php">Contact</a>
                     </li>
                     <!-- <li class="nav-item">
                       <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
