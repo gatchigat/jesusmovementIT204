@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Jesus Movement | Events</title>
+	<title>Jesus Movement | Gallery</title>
 	    <!-- *Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
       integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
@@ -103,12 +103,12 @@ include "about.php"
      <section class="white-section" id="gallery">
          <div class="gallery">
             
-         <img src="images/gallery/13.jpg" alt="">
-         <img src="images/gallery/14.jpg" alt="">
-         <img src="images/gallery/15.jpg" alt="">
-         <img src="images/gallery/16.jpg" alt="">
-         <img src="images/gallery/17.jpg" alt="">
-         <img src="images/gallery/18.jpg" alt="">
+         <img src="images/gallery/13.jpg" alt="Church service">
+         <img src="images/gallery/14.jpg" alt="Statue Jesus Crucifix">
+         <img src="images/gallery/15.jpg" alt="Church service with text 'Jesus'">
+         <img src="images/gallery/16.jpg" alt="Rosary">
+         <img src="images/gallery/17.jpg" alt="Church service with text 'Jesus'">
+         <img src="images/gallery/18.jpg" alt="Man being prayed over">
         </div>
   
        
