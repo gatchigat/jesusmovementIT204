@@ -146,9 +146,9 @@ header( "refresh:3; url=memberlist.php" );
 
           //LIVE HEROKU
           $host = 'remotemysql.com';
-          $db = 'xTgtou9TeO';
-          $user = 'xTgtou9TeO';
-          $pass = 'J88jEdPVfw';
+          $db = 'CWdS0LyDbE';
+          $user = 'CWdS0LyDbE';
+          $pass = '5mRWTh5N2D';
 
 
           //CONNECT TO DB
